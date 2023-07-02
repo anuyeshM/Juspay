@@ -1,0 +1,73 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.container > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: min(100%, 400px);
+  border-radius: 4px;
+  padding: 40px;
+  background-color: #222;
+  border: 1px solid #333;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.container > div > h1 {
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.container > div > h1 > strong {
+  color: #457b9d;
+}
+
+.container > div > ul {
+  display: flex;
+  width: 100%;
+  max-height: 348px;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+}
+
+.container > div > ul > li {
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #457b9d;
+  background-color: #222;
+  display: flex;
+  align-items: center;
+  cursor: grab;
+}
+
+.container > div > ul > li:hover {
+  box-shadow: 0 0 5px #457b9d;
+}
+
+.container > div > ul > li > div {
+  display: block;
+  height: 50x;
+  width: 50px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.container > div > ul > li > strong {
+  color: lightgray;
+  margin-left: 10px;
+}
+
+.container > div > ul > li:last-child {
+  margin-bottom: 0;
+}
